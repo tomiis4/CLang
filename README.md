@@ -1,5 +1,25 @@
 # C Cheatsheet
 
+<table>
+<td>
+
+* [Imports](#import)
+* [Variables](#variables)
+* [Input/Output](#inputoutput)
+* [Loops](#loops)
+
+
+</td>
+<td>
+
+* [Function & Return](#functionreturn)
+* [Extern file](#extern-file)
+* [Logic](#logic)
+* [Projects](#projects)
+
+</td>
+</table>
+
 ## Import
 ### Input/Output lib
 ```C
@@ -57,11 +77,7 @@ while (1) {}
 for (;;) {}
 ```
 
-## Function/Return/Class
-### Class
-```C
-public class ClassName {}
-```
+## Function/Return
 ### Function
 ```C
 // Basic
@@ -75,7 +91,7 @@ int main() { return 0; }
 int name() { return 5+5; }
 ```
 
-## Another file
+## Extern file
 ### Import file
 ```C
 // main.C
