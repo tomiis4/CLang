@@ -82,7 +82,7 @@ int name() { return 5+5; }
 #include "second.h"
 
 // second.h
-extern int name(return 5+5;)
+extern int name() { return 5+5; }
 ```
 
 ## Logic
