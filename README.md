@@ -3,6 +3,7 @@
 <table>
 <td>
 
+* [Hello World](#hello-world)
 * [Imports](#import)
 * [Variables](#variables)
 * [Input/Output](#inputoutput)
@@ -19,6 +20,17 @@
 
 </td>
 </table>
+
+## Hello world
+```C
+#include <stdio.h>
+
+int main() {
+   printf("Hello, world.");
+ 
+   return 0;
+}
+```
 
 ## Import
 ### Input/Output lib
