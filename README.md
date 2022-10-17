@@ -1,9 +1,10 @@
 # C Cheatsheet
 
+# Add Hello world
+
 <table>
 <td>
 
-* [Hello World](#hello-world)
 * [Imports](#import)
 * [Variables](#variables)
 * [Input/Output](#inputoutput)
@@ -14,23 +15,13 @@
 <td>
 
 * [Function & Return](#functionreturn)
-* [Extern file](#extern-file)
+* [Extern file](#externfile)
 * [Logic](#logic)
 * [Projects](#projects)
+* [Time (Lib.)](#time)
 
 </td>
 </table>
-
-## Hello world
-```C
-#include <stdio.h>
-
-int main() {
-   printf("Hello, world.");
- 
-   return 0;
-}
-```
 
 ## Import
 ### Input/Output lib
@@ -123,6 +114,17 @@ if (x) {} else if (y) {} else {}
 switch (x) { case "y": break; }
 ```
 
+## Time
+### Delay
+```C
+#include <time.h>
+
+void delay(int msDelay) {
+	clocl_t = startTime = clock();
+	while (clocl() < startTime + msDelay);
+}
+```
+
 ## Others
 ### Size of array
 ```C
@@ -130,6 +132,18 @@ int array = {1, 2, 3, 4, 5};
 
 int size = sizeof array / sizeof array[0];
 ```
+### Random number
+```C
+#include <stdlib.h>
+#include <time.h>
+
+// 0-5
+int randomInt = (rand() % 5) + 1;
+srand(time(NULL));
+```
+
+
+
 
 ## Projects
  - Calculator
