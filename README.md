@@ -148,3 +148,4 @@ srand(time(NULL));
 ## Projects
  - Calculator
  - Sorting algorithm
+ - Path finding algorithm
