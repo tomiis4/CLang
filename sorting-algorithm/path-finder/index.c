@@ -26,7 +26,7 @@ int sign(int x) {
 
 int randomInt(int maxValue) {
 	int random = (rand() % maxValue) + 1;
-	srand(time(NULL));
+	srand(time(0));
 
 	return random;
 }
@@ -56,8 +56,8 @@ int main() {
   };
 
 	// points
-  int startPoint[2] = {randomInt(8), randomInt(7)}; 
-  int endPoint[2] = {randomInt(8), randomInt(7)};
+  int startPoint[2] = {1, 1}; 
+  int endPoint[2] = {4, 7};
 	
 	// append start point (O) and end point (X)
 	screen[getIndex(startPoint[0], startPoint[1], 9)] = 'O';
@@ -88,7 +88,7 @@ int main() {
 		// append & show screen with delay (remove for better spec ;) )
 	  screen[getIndex(xPoint, yPoint, 9)] = '-';
 		printf("\n%s\n", screen);
-		delay(50);
+		//delay(50);
 	}
 
 	// append spawn point
@@ -98,14 +98,15 @@ int main() {
 
 
 	/*  GET SHORTEST PATH   */
-
+	// Not working too well
+	
 	int mainX = startPoint[0];
 	int mainY = startPoint[1];
 
-	int x1	= startPoint[0];
-	int y1	= startPoint[1];
-	int x2	= endPoint[0];
-	int y2	= endPoint[1];
+	int x1 = startPoint[0];
+	int y1 = startPoint[1];
+	int x2 = endPoint[0];
+	int y2 = endPoint[1];
 
 	int dx = abs(x2 - x1);
 	int dy = abs(y2 - y1);
