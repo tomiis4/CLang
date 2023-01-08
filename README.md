@@ -76,7 +76,7 @@ for (int i=0; i<5; i++) {}
 // First way
 while (1) {}
 
-// sSecond way
+// Second way
 for (;;) {}
 ```
 
@@ -120,8 +120,8 @@ switch (x) { case "y": break; }
 #include <time.h>
 
 void delay(int msDelay) {
-	clocl_t = startTime = clock();
-	while (clocl() < startTime + msDelay);
+	clock_t startTime = clock();
+	while (clock() < startTime + msDelay);
 }
 ```
 
@@ -139,13 +139,12 @@ int size = sizeof array / sizeof array[0];
 
 // 0-5
 int randomInt = (rand() % 5) + 1;
-srand(time(NULL));
+srand(time(0));
 ```
-
 
 
 
 ## Projects
  - Calculator
  - Sorting algorithm
- - Path finding algorithm
+ - Snake
