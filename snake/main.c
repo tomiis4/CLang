@@ -40,8 +40,8 @@ int main() {
 	int apple = getApple();
 	
 	int snakeDirection = 1; // 0 left, 1 right, 2 top, 3 bottom;
-	int snake[] = {0,1,2};
-	int snakeLen = sizeof snake / sizeof snake[0];
+	int snake[64] = {0,1,2};
+	int snakeLen = 3;
 	
 	
 	for (;;) {
@@ -102,6 +102,7 @@ int main() {
 					break;
 				default: snake; 
 			}
+			snakeLen++;
 		}
 		
 		// append apple
