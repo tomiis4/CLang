@@ -18,7 +18,8 @@
 * [Extern file](#externfile)
 * [Logic](#logic)
 * [Projects](#projects)
-* [Time (Lib.)](#time)
+* [Time](#time)
+	* [Delay](#delay)
 
 </td>
 </table>
