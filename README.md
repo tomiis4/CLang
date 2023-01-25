@@ -64,7 +64,8 @@ printf("Hello, %s", variable);
 ```C
 #include <stdio.h>
 
-scanf("%s", &variable);
+int variable;
+scanf("%d", &variable);
 ```
 
 ## Loops
