@@ -2,15 +2,43 @@
 
 <table>
 
-
 <td>
 
 * [File](#file)
 * [Hello world](#hello-world)
+* [Importing libraries](#importing-libraries)
+* [Variables](#variables)
+    * [struct](#struct)
+* [Functions](#functions)
 
 </td>
+<td>
 
+* [Logic statements](#logic-statements)
+    * [if/else](#ifelse)
+    * [switch/case](#switchcase)
+* [Loops](#loops)
+    * [for-i](#for-i)
+    * [while](#while)
 
+</td>
+<td>
+
+* [Converting](#converting)
+* [Build-in iunctions](#build-in-functions)
+    * [printf](#printf)
+    * [scanf](#scanf)
+    * [memory](#memory)
+
+</td>
+<td>
+
+* [Pointers](#pointers)
+* [Libraries](#libraries)
+    * [time.h](#time.h)
+* [Projects](#projects)
+
+</td>
 
 </table>
 
@@ -37,9 +65,9 @@ int main() {
 ```
 
 
-## Importing packages
+## Importing libraries
 ```c
-#include <package.h>
+#include <library.h>
 ```
 
 
@@ -74,7 +102,7 @@ Types:
 */
 ```
 
-### Structs
+### structs
 ```c
 // create struct
 struct <struct-name> {
@@ -104,7 +132,7 @@ struct <struct-name> <variable-name> = {<value>, <value>};
 ```
 
 
-## Logic Statements
+## Logic statements
 
 ### If/else
 ```c
@@ -132,7 +160,7 @@ switch (statement) {
 ```
 
 
-## Loop
+## Loops
 
 ### For-I
 ```c
@@ -187,7 +215,7 @@ printf("Hello, <format-type>", <variable>);
 ```c
 // get user input
 
-scanf(<format-type>, &<variable>);
+scanf(<format-type>, <variable-addres>);
 ```
 
 ### memory
@@ -195,7 +223,7 @@ scanf(<format-type>, &<variable>);
 // todo
 ```
 
-#TODO
+
 ## Pointers
 ```c
 // create new pointer variable with name pointer
