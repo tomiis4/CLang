@@ -1,7 +1,5 @@
 # C Cheatsheet
 
-# Add Hello world
-
 <table>
 <td>
 
