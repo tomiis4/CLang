@@ -1,3 +1,98 @@
+# <a href="#">C</a> Cheatsheet <img width="50em" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1200px-C_Programming_Language.svg.png">
+
+<table>
+
+
+<td>
+
+* [File](#file)
+* [Hello world](#hello-world)
+
+</td>
+
+
+
+</table>
+
+
+## File
+
+### Run file
+```sh
+gcc <file-name>.c -o <exe-filename>.exe
+
+./<exe-filename>.exe
+```
+
+
+## Hello world
+```c
+#include <stdio.h>
+
+int main() {
+    printf("Hello, world\n");
+
+    return 0;
+}
+```
+
+## Importing packages
+```c
+#include <package.h>
+```
+
+
+## Variables
+```c
+// declare variable
+<type> <name> = <value>;
+
+// declare array
+<type> <name>[] = {<value>, <value>};
+
+// string
+char <name>[] = "<content>";
+char <name>[<str-length>] = "<content>";
+
+/*
+Types:
+    unsigned int, short, long = %u = positive number
+    signed int, short, long   = %d = negative numbers
+
+    bool  = %d  = true/false
+    char  = %c  = one character (in single quiote)
+    int   = %d  = numbers
+    short = %hd = numbers (-32_768 to 32_767)
+    long  = %ld = numbers (-9223372036854775808 to 9223372036854775807)
+
+    float       = %f  = floating numbers (6 decimals)
+    double      = %lf = floating numbers (15 decimals)
+    long double = %Lf = floating numbers (19 decimals)
+
+    void = N/A = only for function return as empty
+*/
+```
+
+### Struct
+
+
+
+
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+
+# OLD ONE
+
+
+
+
 # C Cheatsheet
 
 <table>
