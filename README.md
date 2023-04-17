@@ -36,6 +36,7 @@ int main() {
 }
 ```
 
+
 ## Importing packages
 ```c
 #include <package.h>
@@ -73,173 +74,164 @@ Types:
 */
 ```
 
-### Struct
+### Structs
+```c
+// create struct
+struct <struct-name> {
+    <type> <key-name>;
+    <type> <key-name>;
+}
 
+// initialize empty struct variable
+struct <struct-name> <variable-name>;
 
-
-
-<br><br><br>
-<br><br><br>
-<br><br><br>
-<br><br><br>
-<br><br><br>
-<br><br><br>
-<br><br><br>
-<br><br><br>
-<br><br><br>
-
-# OLD ONE
-
-
-
-
-# C Cheatsheet
-
-<table>
-<td>
-
-* [Imports](#import)
-* [Variables](#variables)
-* [Input/Output](#inputoutput)
-* [Loops](#loops)
-
-
-</td>
-<td>
-
-* [Function & Return](#functionreturn)
-* [Extern file](#externfile)
-* [Logic](#logic)
-* [Projects](#projects)
-* [Time](#time)
-	* [Delay](#delay)
-
-</td>
-</table>
-
-## Import
-### Input/Output lib
-```C
-#include <stdio.h>
-```
-### String lib
-```C
-#include <string.h>
-```
-### Time lib
-```C
-#include <time.h>
+// initialize filled struct variable
+struct <struct-name> <variable-name> = {<value>, <value>};
 ```
 
-## Variables
-### Types
-```C
-int x = 5; // %d
-float x = 3.14; // %f
-double x = 5.5555f; // %lf
-char x = 'A'; // %c
-char x[] = "Hello"; // %s
 
-int x[5] = {1, 2, 3, 4, 5}; 
-```
-## Input/Output
-### Output
-```C
-#include <stdio.h>
+## Functions
+```c
+<type> name() {
+	//...
+}
 
-// Basic
-printf("Hello, world");
+// return
+<type> name() { return x }
 
-// Variable
-printf("Hello, %s", variable);
-```
-### Input
-```C
-#include <stdio.h>
-
-int variable;
-scanf("%d", &variable);
+// parameters 
+<type> name(<type> param1) {  }
 ```
 
-## Loops
-### For loop
-```C
-for (int i=0; i<5; i++) {}
-```
-### While loop
-```C
-// First way
-while (1) {}
 
-// Second way
-for (;;) {}
-```
+## Logic Statements
 
-## Function/Return
-### Function
-```C
-// Basic
-void name() {}
-
-// Main
-int main() { return 0; }
-```
-### Return
-```C
-int name() { return 5+5; }
-```
-
-## Extern file
-### Import file
-```C
-// main.C
-#include "second.h"
-
-// second.h
-extern int name() { return 5+5; }
-```
-
-## Logic
-### If/Else If/ Else
-```C
-if (x) {} else if (y) {} else {}
-```
-### Switch/Case
-```C
-switch (x) { case "y": break; }
-```
-
-## Time
-### Delay
-```C
-#include <time.h>
-
-void delay(int msDelay) {
-	clock_t startTime = clock();
-	while (clock() < startTime + msDelay);
+### If/else
+```c
+if (condition) {
+    //...
+} else if (condition2) {
+    //...
+} else {
+    //...
 }
 ```
 
-## Others
-### Size of array
-```C
-int array = {1, 2, 3, 4, 5};
-
-int size = sizeof array / sizeof array[0];
+### Switch/case
+```c
+switch (statement) {
+    case x:
+        //...
+        break;
+    case y:
+        //...
+        break;
+    default:
+        //...
+}
 ```
-### Random number
-```C
+
+
+## Loop
+
+### For-I
+```c
+for (int i=0; i < 10; i++) {
+    //...
+}
+```
+
+### While
+```c
+while (condition) {
+    //...
+}
+```
+
+
+## Converting
+```c
+// str -> int
 #include <stdlib.h>
-#include <time.h>
 
-// 0-5
-int randomInt = (rand() % 5) + 1;
-srand(time(0));
+int number = atoi(<string>);
+
+// int -> str
+#include <stdlib.h>
+
+char str[20];
+sprintf(str, "%d", <number>);
+
+// int -> float
+float decimal = (float) <number>;
+
+// flaot -> int
+int number = (int) <float>;
 ```
 
+
+## Build-In Functions
+
+### printf
+```c
+// print formatted output
+
+// without variable
+printf("Hello, world");
+
+// with variable
+printf("Hello, <format-type>", <variable>);
+```
+
+### scanf
+```c
+// get user input
+
+scanf(<format-type>, &<variable>);
+```
+
+### memory
+```c
+// todo
+```
+
+#TODO
+## Pointers
+```c
+// create new pointer variable with name pointer
+<type> *pointer;
+
+// change pointer address
+pointer = <address>;
+
+// change data from address/pointer
+*pointer = <value>
+
+// read data from address/pointer
+*pointer
+
+// get address from variable
+&variable
+```
+
+## Libraries 
+
+### time.h
+```c
+// get start time
+clock_t startTime = clock();
+
+
+// create delay
+void delay(int ms) {
+    clock_t startTime = clock();
+
+    while (clock() < startTime + msDelay);;
+}
+```
 
 
 ## Projects
- - Calculator
- - Sorting algorithm
- - Snake
+- Calculator
+- Sorting algorithm
+- Snake
