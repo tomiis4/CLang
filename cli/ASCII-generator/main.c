@@ -81,7 +81,7 @@ void printColors(const char* filename) {
          b = buffer[index];
          g = buffer[index + 1];
          r = buffer[index + 2];
-         printf("%s", getPixel(r,g,b));
+         printf("%c ", getPixel(r,g,b));
       }
 
 		printf("\n");
