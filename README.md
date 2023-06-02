@@ -193,7 +193,7 @@ sprintf(str, "%d", <number>);
 // int -> float
 float decimal = (float) <number>;
 
-// flaot -> int
+// float -> int
 int number = (int) <float>;
 ```
 
