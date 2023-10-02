@@ -3,8 +3,10 @@
 <table>
 <td>
 
-- [x](#x)
-- [x](#x)
+- [File](#file)
+- [Hello world](#hello-world)
+- [Include headers](#include-headers)
+- [Variables](#variables)
 
 </td>
 <td>
